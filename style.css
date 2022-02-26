@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;800&display=swap');
+
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    /* font-weight: 500; */
+    background-color: hsl(217, 19%, 24%);
+}
+
+.container{
+    background-color: hsl(216, 16%, 43%);
+    width: calc(1000px - 500px);
+    margin: auto;
+    height: 230px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 170px;
+    position: relative;
+}
+.id{
+    color: hsl(150, 100%, 66%);
+
+}
+div{
+    padding: 15px;
+}
+.text{
+    color:hsl(193, 38%, 86%);
+    width: 500px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+.divider{
+    z-index: 3;
+}
+
+.dice{
+    width: 26px;
+    height: 26px;
+    padding: 0px;
+}
+
+.dicyy{
+    width: 25px;
+    height: 25px;
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+position: absolute;
+bottom:-11%;
+left: 44.7%;
+}
+
+.dicyy:hover{
+box-shadow: 0 0px 28px 6px  hsl(150, 100%, 66%) ;
+}
+
+@media (max-width:549px) {
+    .dicyy{
+        left:42.5%;
+    }
+    .text{
+        width: 350px;
+        margin-bottom:5px;
+     
+    }
+    .divider{
+        width: 350px;
+    }
+    .container{
+        width: calc(1000px - 650px);
+        height: 200px;
+    }
+}
+@media (max-width:395px) {
+  
+    .text{
+        width: 250px;
+        margin-bottom:1px;
+     
+    }
+    .divider{
+        width: 250px;
+    }
+    .container{
+        width: calc(1000px - 730px);
+        height: 200px;
+    }
+    .dice{
+        width: 20px;
+        height: 20px;
+        padding:0px;
+    }
+    .dicyy{
+        left:41%;
+        width: 19px;
+        height: 19px;
+    }
+}
+/* @media (max-width:895px) {
+    .dicyy{
+        left:43%;
+    }
+    .text{
+        width: 350px;
+    
+    }
+    .divider{
+        width: 350px;
+    }
+}
+
+@media (max-width:779px) {
+    .dicyy{
+        left:43%;
+    }
+    .text{
+        width: 300px;
+    
+    }
+    .divider{
+        width: 300px;
+    } */
+/* } */
